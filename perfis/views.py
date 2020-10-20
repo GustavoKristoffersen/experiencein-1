@@ -2,13 +2,10 @@ from django.shortcuts import render, redirect
 from perfis.models import Perfil, Convite
 from django.contrib.auth.decorators import login_required
 
-
 from rest_framework import viewsets, response, status, exceptions
 from rest_framework.decorators import api_view, renderer_classes
 from rest_framework.renderers import JSONRenderer, BrowsableAPIRenderer
 from rest_framework.permissions import AllowAny
-
-
 
 
 class PerfilViewSet(viewsets.ModelViewSet):
@@ -24,7 +21,6 @@ class PerfilViewSet(viewsets.ModelViewSet):
 		if self.request.method == 'POST':
 			return (AllowAny(),)
 		return super().get_permissions()
-
 
 @api_view(['GET'])
 @renderer_classes((JSONRenderer, BrowsableAPIRenderer))
@@ -49,7 +45,6 @@ def convidar(request, *args, **kwargs):
 			status=status.HTTP_201_CREATED)
 	raise exceptions.ParseError('Você não pode convidar o perfil com o id informado.')
 
-
 @api_view(['POST'])
 @renderer_classes((JSONRenderer, BrowsableAPIRenderer))
 def aceitar(request, *args, **kwargs):
@@ -62,14 +57,12 @@ def aceitar(request, *args, **kwargs):
 	return response.Response({'menssagem': 'Convite aceito com sucesso.'},
 							  status=status.HTTP_201_CREATED)
 
-
 @api_view(['GET'])
 @renderer_classes((JSONRenderer, BrowsableAPIRenderer))
 def get_meu_perfil(request, *args, **kwargs):
 	perfil_logado = get_perfil_logado(request)
 	serializer = None
 	return response.Response(serializer.data, status=status.HTTP_200_OK)
-
 
 def get_perfil_logado(request):
 	return request.user.perfil
