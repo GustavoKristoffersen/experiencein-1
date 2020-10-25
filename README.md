@@ -20,50 +20,26 @@ Projeto adaptado e desenvolvido para fins didáticos na matéria de Programaçã
     2. ativar ambiente virtual
     3. `pip3 install django==2.2 djangorestframework`
 3. Identificar os endpoints a serem criados
-
-    Prints do sistema atual (antes da conversão em uma API):
-
-    ![API%20-%20Experiencein%20b3857ef579264bf3bd349ee9efa381cb/Untitled.png](API%20-%20Experiencein%20b3857ef579264bf3bd349ee9efa381cb/Untitled.png)
-    Figura 1. Tela de login.
-
-    ![API%20-%20Experiencein%20b3857ef579264bf3bd349ee9efa381cb/Untitled%201.png](API%20-%20Experiencein%20b3857ef579264bf3bd349ee9efa381cb/Untitled%201.png)
-    Figura 2. Tela de cadastro de usuário.
-
-    ![API%20-%20Experiencein%20b3857ef579264bf3bd349ee9efa381cb/Untitled%202.png](API%20-%20Experiencein%20b3857ef579264bf3bd349ee9efa381cb/Untitled%202.png)
-    Figura 3. Tela inicial da rede social logo após o login.
-
-    ![API%20-%20Experiencein%20b3857ef579264bf3bd349ee9efa381cb/Untitled%203.png](API%20-%20Experiencein%20b3857ef579264bf3bd349ee9efa381cb/Untitled%203.png)
-    Figura 4. Página inicial da rede social  quando um convite é recebido.
-
-    ![API%20-%20Experiencein%20b3857ef579264bf3bd349ee9efa381cb/Untitled%204.png](API%20-%20Experiencein%20b3857ef579264bf3bd349ee9efa381cb/Untitled%204.png)
-    Figura 5. Página inicial da rede social após um convite ser aceito.
-
-    ![API%20-%20Experiencein%20b3857ef579264bf3bd349ee9efa381cb/Untitled%205.png](API%20-%20Experiencein%20b3857ef579264bf3bd349ee9efa381cb/Untitled%205.png)
-    Figura 6. Página do contato.
-
-  1. perfis/
-      POST → nome, empresa, telefone, email, ~~contatos(n,n)~~, senha | Cria perfil novo
-      GET → id, nome, e-mail, pode_convidar  | Recupera a lista de perfis (todos que constam no banco)
-
-  2. perfis/id 
-      GET → id, nome e e-mail, pode_convidar | Recupera usuário com id informado
+    1. perfis/
+    POST → nome, empresa, telefone, email, ~~contatos(n,n)~~, senha | Cria perfil novo
+    GET → id, nome, e-mail, pode_convidar  | Recupera a lista de perfis (todos que constam no banco)
+    2. perfis/id 
+    GET → id, nome e e-mail, pode_convidar | Recupera usuário com id informado
 
 ### Vídeo 2
 
-  3. perfil/
-      GET → id, nome, empresa, telefone, email, contatos(n,n) | Recupera o perfil de quem está logado
+3. Identificar os endpoints a serem criados (continuação)
 
-  4. convites/
-      GET → id, convidado, solicitante | Retorna todos os convites recebidos pelo usuário logado 
-
-  5. convites/aceitar/id 
-      POST → aceita convite com id informado
-
-  6. convites/convidar/id 
-      POST → envia convites para o perfil com id informado
-
-  7. login/
-      POST → username, password | Retorna token de autenticação
+    3. perfil/
+    GET → id, nome, empresa, telefone, email, contatos(n,n) | Recupera o perfil de quem está logado
+    4. convites/
+    GET → id, convidado, solicitante | Retorna todos os convites recebidos pelo usuário logado
+    5. convites/aceitar/id
+    POST → aceita convite com id informado
+    6. convites/convidar/id
+    POST → envia convites para o perfil com id informado
+    7. login/
+    POST → username, password | Retorna token de autenticação
 
 4. Adicionar rest_framework ao "settings.py"
 
@@ -121,17 +97,17 @@ REST_FRAMEWORK = {
 
 13. Atualizar modelos (por quê?)
 
-`python [manage.py](http://manage.py) makemigrations` (apenas para verificar)
+    `python [manage.py](http://manage.py) makemigrations` (apenas para verificar)
 
-`python [manage.py](http://manage.py) migrate`
+    `python [manage.py](http://manage.py) migrate`
 
 14. Realizar o commit e push para o envio dos códigos da api para o repositório GitHub
 
-`git commit -m "mensagem de identificação do commit"`
+    `git commit -m "mensagem de identificação do commit"`
 
-`git push -u origin api`
+    `git push -u origin api`
 
-Tempo previsto para execução  2 horas
+Tempo previsto para execução: 2 horas
 
 ### Proxy para o git
 - Ativa: _git config --global http.proxy http://proxyUsername:proxyPassword@proxy.server.com:port_
