@@ -95,11 +95,11 @@ REST_FRAMEWORK = {
 }
 ```
 
-13. Atualizar modelos (por quê?)
+13. Atualizar modelos (pois dois apps foram incluídos no item 4)
 
-    `python [manage.py](http://manage.py) makemigrations` (apenas para verificar)
+    `python manage.py makemigrations` (apenas para verificar)
 
-    `python [manage.py](http://manage.py) migrate`
+    `python manage.py migrate`
 
 14. Realizar o commit e push para o envio dos códigos da api para o repositório GitHub
 
