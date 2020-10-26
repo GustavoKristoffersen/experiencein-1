@@ -9,7 +9,7 @@ Projeto adaptado e desenvolvido para fins didáticos na matéria de Programaçã
 2. Contiuação da edição do arquivo `views.py`: https://youtu.be/fUxCwHP8j6c
 3. Commit e push: https://youtu.be/qJCtoMM-QZI
 4. Criação do arquivo `serializers.py`: https://youtu.be/Mr3oHC02nYE
-5. Edição do arquivo `urls.py`: https://youtu.be/DdWoKIdf4ac
+5. Edição do arquivo `urls.py`, testes e finalização do tutorial: https://youtu.be/DdWoKIdf4ac
 
 ### Vídeo 1
 
