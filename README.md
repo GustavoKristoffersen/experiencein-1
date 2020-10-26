@@ -5,10 +5,11 @@ Projeto adaptado e desenvolvido para fins didáticos na matéria de Programaçã
 
 ### Vídeos de execução da implementação
 
-1. https://youtu.be/RjP4W2OEXt0
-2. https://youtu.be/fUxCwHP8j6c
-3. Processing
-4. Processing
+1. Introdução e edição do arquivo `views.py`: https://youtu.be/RjP4W2OEXt0
+2. Contiuação da edição do arquivo `views.py`: https://youtu.be/fUxCwHP8j6c
+3. Commit e push: https://youtu.be/qJCtoMM-QZI
+4. Criação do arquivo `serializers.py`: https://youtu.be/Mr3oHC02nYE
+5. Edição do arquivo `urls.py`: https://youtu.be/DdWoKIdf4ac
 
 ### Vídeo 1
 
@@ -56,7 +57,7 @@ TODO:
   1. Selecionar um vídeo:  [https://www.youtube.com/results?search_query=decorador+python](https://www.youtube.com/results?search_query=decorador+python)
   2. Como funcionam decoradores em Python?](https://pt.stackoverflow.com/questions/23628/como-funcionam-decoradores-em-python)
 
-### Vídeo 3 e 4
+### Vídeo 4
 
 5. Criar arquivo `serializers.py`  na pasta perfil
 6. Criar classe ContatoSerializer
@@ -67,12 +68,15 @@ TODO:
 8. Criar classe PerfilSimplificadoSerializer
     1. Adicionar campo pode_convidar - para verificar se o perfil já faz parte dos contatos
 9. Criar classe ConviteSerializer
-10. No arquivo [`views.py`](http://views.py):
+
+### Vídeo 5
+
+10. No arquivo `views.py`:
     1. Criar PerfilViewSet
     2. Criar função get_convites
     3. Criar função get_meu_perfil
     4. Criar função aceitar
-    5. Criar função convidar
+    5. Criar função convidar    
 11. No arquivo `urls.py`:
     1. Adicionar PerfilViewSet para o endpoint 'perfis'
     2. Adicionar endpoint 'perfil/'
