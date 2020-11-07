@@ -52,11 +52,6 @@ Projeto adaptado e desenvolvido para fins didáticos na matéria de Programaçã
     ]
     ```
 
-TODO:
-1. Vincular vídeo explicando os decoradores em Python.
-  1. Selecionar um vídeo:  [https://www.youtube.com/results?search_query=decorador+python](https://www.youtube.com/results?search_query=decorador+python)
-  2. Como funcionam decoradores em Python?](https://pt.stackoverflow.com/questions/23628/como-funcionam-decoradores-em-python)
-
 ### Vídeo 4
 
 5. Criar arquivo `serializers.py`  na pasta perfil
