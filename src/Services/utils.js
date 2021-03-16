@@ -1,4 +1,4 @@
-const Token_key = 'ExpInToken';
+const Token_key = "ExpInToken";
 
 export const isAutenticated = () => localStorage.getItem(Token_key) !== null;
 export const getToken = () => localStorage.getItem(Token_key);
