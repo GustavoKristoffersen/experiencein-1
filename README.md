@@ -21,25 +21,25 @@ Projeto adaptado e desenvolvido para fins didáticos na matéria de Programaçã
     2. ativar ambiente virtual
     3. `pip3 install django==2.2 djangorestframework`
 3. Identificar os endpoints a serem criados
-    1. perfis/
-    POST → nome, empresa, telefone, email, ~~contatos(n,n)~~, senha | Cria perfil novo
+    1. perfis/  
+    POST → nome, empresa, telefone, email, ~~contatos(n,n)~~, senha | Cria perfil novo  
     GET → id, nome, e-mail, pode_convidar  | Recupera a lista de perfis (todos que constam no banco)
-    2. perfis/id 
-    GET → id, nome e e-mail, pode_convidar | Recupera usuário com id informado
+    2. perfis/id  
+    GET → id, nome, e-mail, pode_convidar | Recupera usuário com id informado
 
 ### Vídeo 2
 
 3. Identificar os endpoints a serem criados (continuação)
 
-    3. perfil/
+    3. perfil/  
     GET → id, nome, empresa, telefone, email, contatos(n,n) | Recupera o perfil de quem está logado
-    4. convites/
+    4. convites/  
     GET → id, convidado, solicitante | Retorna todos os convites recebidos pelo usuário logado
-    5. convites/aceitar/id
+    5. convites/aceitar/id  
     POST → aceita convite com id informado
-    6. convites/convidar/id
+    6. convites/convidar/id  
     POST → envia convites para o perfil com id informado
-    7. login/
+    7. login/  
     POST → username, password | Retorna token de autenticação
 
 4. Adicionar rest_framework ao "settings.py"
