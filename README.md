@@ -12,7 +12,7 @@
     *pip install django-cors-headers*
     mais informações no artigo, [How to Fix Django CORS Error](https://www.notion.so/ExperienceIn-React-4d3b7c6d56864f01841a7d640724191c#468d161ab687435ca7b643a1b3881870).
     2. Adicionar biblioteca ao `settings.py`   
-
+    ``` python
     INSTALLED_APPS = [
     ... ,
     'corsheaders'
@@ -31,7 +31,8 @@
     CORS_ORIGIN_WHITELIST = (
         'http://localhost:3000',
     )
-
+    ```
+    
 ## [Vídeo 2 ~49 min - Introdução ao React e tela de login](https://youtu.be/rESsyIn2GGw)
 
 4. Explicação sobre a estrutura de pastas do projeto
