@@ -1,3 +1,70 @@
+# Front-end com React
+
+## [Vídeo 1 ~33 min - Configuração inicial do projeto React e ajustes no projeto do back-end](https://youtu.be/urluEm7UHsE)
+
+1. Download do Projeto Inicial do front-end
+    1. Fazer download da TAG: [https://github.com/oliveirafhm/experiencein/releases/tag/frontend-v0.1-alpha](https://github.com/oliveirafhm/experiencein/releases/tag/frontend-v0.1-alpha), e utilizar de base para o desenvolvimento do front-end com React
+2. Instalação das dependências
+    1. *cd front-end*
+    2. *npm install*
+3. Configurações de Backend
+    1. Adicionar biblioteca para correção de funcionamento do CORS   
+    *pip install django-cors-headers*
+    mais informações no artigo, [How to Fix Django CORS Error](https://www.notion.so/ExperienceIn-React-4d3b7c6d56864f01841a7d640724191c#468d161ab687435ca7b643a1b3881870).
+    2. Adicionar biblioteca ao `settings.py`   
+
+    INSTALLED_APPS = [
+    ... ,
+    'corsheaders'
+    ]
+
+    MIDDLEWARE = [
+      ... ,
+      'corsheaders.middleware.CorsMiddleware'
+    ]
+
+    ...
+
+    ALLOWED_HOSTS = ['localhost']
+
+    CORS_ORIGIN_ALLOW_ALL = False  
+    CORS_ORIGIN_WHITELIST = (
+        'http://localhost:3000',
+    )
+
+## [Vídeo 2 ~49 min - Introdução ao React e tela de login](https://youtu.be/rESsyIn2GGw)
+
+4. Explicação sobre a estrutura de pastas do projeto
+5. Explicação componentes
+    1. [Introdução a JSX](https://reactjs.org/docs/introducing-jsx.html)
+6. Routes
+7. Login Form
+    1. [Eventos do DOM (Document Object Model)](https://developer.mozilla.org/pt-BR/docs/Web/Events) 
+    2. [Introdução aos Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html)
+
+## Vídeo 3 ~xx min - Formulário de cadastro e comunicação com a API
+
+8. Cadastro de novo usuário na rede
+9. Enviando dados a API
+    1. Lista de endpoints: [https://github.com/oliveirafhm/experiencein/tree/api](https://github.com/oliveirafhm/experiencein/tree/api)
+10. Armazenando token em local storage
+
+## Vídeo 4
+
+11. Recebendo perfis da API
+    1. Documentação sobre *useEffect*
+12. Criando interface para listar perfis
+13. Criando componente para enviar convite
+14. Criando componente para aceitar convite
+
+## Recursos extras
+
+1. [Ferramenta para prototipagem das telas e criação dos estilos](https://stackblitz.com/)
+2. [Intro to react Hooks - Cassidy Williams](https://www.youtube.com/watch?v=xpOnNqg7EPs&ab_channel=WizelineAcademy)
+3. [Virtual DOM](https://pt-br.reactjs.org/docs/faq-internals.html)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
