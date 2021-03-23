@@ -10,7 +10,7 @@
 3. Configurações de Backend
     1. Adicionar biblioteca para correção de funcionamento do CORS   
     *pip install django-cors-headers*
-    mais informações no artigo, [How to Fix Django CORS Error](https://www.notion.so/ExperienceIn-React-4d3b7c6d56864f01841a7d640724191c#468d161ab687435ca7b643a1b3881870).
+    mais informações no artigo, [How to Fix Django CORS Error](https://dzone.com/articles/how-to-fix-django-cors-error).
     2. Adicionar biblioteca ao `settings.py`   
     ``` python
     INSTALLED_APPS = [
@@ -50,13 +50,19 @@
     1. Lista de endpoints: [https://github.com/oliveirafhm/experiencein/tree/api](https://github.com/oliveirafhm/experiencein/tree/api)
 10. Armazenando token em local storage
 
-## Vídeo 4
+## Vídeo 4 ~xx min - Lista de perfis e envio de convites
 
 11. Recebendo perfis da API
-    1. Documentação sobre *useEffect*
+    1. [Documentação sobre *useEffect*](https://pt-br.reactjs.org/docs/hooks-effect.html)
 12. Criando interface para listar perfis
 13. Criando componente para enviar convite
-14. Criando componente para aceitar convite
+
+## Vídeo 5 ~xx min - Aceitando convites e exibindo a lista de contatos
+
+14. Exibindo a lista de convites
+    1. Documentação sobre a função *some()*
+15. Criando componente para aceitar convite
+16. Mostrar a lista de contatos
 
 ## Recursos extras
 
