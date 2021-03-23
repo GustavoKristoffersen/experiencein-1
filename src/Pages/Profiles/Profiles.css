@@ -1,24 +1,31 @@
 .profiles {
-  width: 80%;
-  max-width: 75rem;
-  margin: auto;
-  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
+  justify-content: space-between;
 }
 
 .profiles .invite {
   flex-basis: 30em;
   flex-shrink: 0;
-  margin-top: 3.5rem;
+}
+
+.card-default {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 .profiles .invite .card {
   display: flex;
   align-items: center;
   max-width: 25rem;
-  width: 80vw;
+  width: 100%;
   justify-content: space-between;
   border: 1.5px solid lightgray;
   padding-left: 2rem;
@@ -43,15 +50,6 @@
   transition: box-shadow 250ms ease-out;
 }
 
-.profiles .invite .message {
-  display: block;
-  color: lightseagreen;
-  width: 100%;
-  text-align: left;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-}
-
 .profiles .invite .icon:focus {
   outline: none;
   box-shadow: 0 0 0 2px teal;
@@ -62,9 +60,10 @@
   background-color: rgba(32, 178, 170, 0.2);
   width: 100%;
   max-width: 25rem;
-  margin: auto;
-  margin-top: 3.5rem;
+  height: fit-content;
   border-radius: 5px;
+  flex-basis: 30em;
+  flex-shrink: 0;
 }
 
 .invitations li {
@@ -106,4 +105,36 @@
 .invitations h3 {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.contact h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 75rem;
+  margin: auto;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.contact {
+  margin-top: 3rem;
+  min-width: 30em;
+}
+
+.contact .card {
+  display: flex;
+  align-items: center;
+  max-width: 25rem;
+  width: 100%;
+  justify-content: space-between;
+  border: 1.5px solid lightgray;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  height: 4.5rem;
 }

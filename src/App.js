@@ -16,7 +16,12 @@ function App() {
           <ul>
             <li>
               <NavLink exact to="/">
-                Home
+                Login
+              </NavLink>
+            </li>
+            <li>
+              <NavLink exact to="/register">
+                Register
               </NavLink>
             </li>
             <li>
