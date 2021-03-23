@@ -9,8 +9,8 @@
     2. *npm install*
 3. Configurações de Backend
     1. Adicionar biblioteca para correção de funcionamento do CORS   
-    *pip install django-cors-headers*
-    mais informações no artigo, [How to Fix Django CORS Error](https://dzone.com/articles/how-to-fix-django-cors-error).
+    *pip install django-cors-headers*  
+    mais informações no artigo: [How to Fix Django CORS Error](https://dzone.com/articles/how-to-fix-django-cors-error).
     2. Adicionar biblioteca ao `settings.py`   
     ``` python
     INSTALLED_APPS = [
