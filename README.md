@@ -106,7 +106,9 @@ REST_FRAMEWORK = {
 
     `git push -u origin api`
 
-Tempo previsto para execução: 2 horas
+#### Tempo previsto para execução: 2 horas
+
+---
 
 ### Proxy para o git
 - Ativa: _git config --global http.proxy http://proxyUsername:proxyPassword@proxy.server.com:port_
