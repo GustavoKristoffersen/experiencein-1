@@ -43,14 +43,14 @@
     1. [Eventos do DOM (Document Object Model)](https://developer.mozilla.org/pt-BR/docs/Web/Events) 
     2. [Introdução aos Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html)
 
-## Vídeo 3 ~xx min - Formulário de cadastro e comunicação com a API
+## [Vídeo 3 ~52 min - Formulário de cadastro e comunicação com a API](https://youtu.be/r4wfJBuWDEY)
 
 8. Cadastro de novo usuário na rede
 9. Enviando dados a API
     1. Lista de endpoints: [https://github.com/oliveirafhm/experiencein/tree/api](https://github.com/oliveirafhm/experiencein/tree/api)
 10. Armazenando token em local storage
 
-## Vídeo 4 ~xx min - Lista de perfis e envio de convites
+## [Vídeo 4 ~78 min - Lista de perfis e envio de convites](https://youtu.be/szzsUxWcdBA)
 
 11. Recebendo perfis da API
     1. [Documentação sobre *useEffect*](https://pt-br.reactjs.org/docs/hooks-effect.html)
