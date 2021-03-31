@@ -57,10 +57,10 @@
 12. Criando interface para listar perfis
 13. Criando componente para enviar convite
 
-## Vídeo 5 ~xx min - Aceitando convites e exibindo a lista de contatos
+## [Vídeo 5 ~58 min - Aceitando convites e exibindo a lista de contatos](https://youtu.be/DhOE0VbP9F0)
 
 14. Exibindo a lista de convites
-    1. Documentação sobre a função *some()*
+    1. [Documentação sobre a função *some()*](https://www.w3schools.com/jsref/jsref_some.asp)
 15. Criando componente para aceitar convite
 16. Mostrar a lista de contatos
 
